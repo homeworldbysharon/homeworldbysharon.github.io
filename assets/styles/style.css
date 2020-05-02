@@ -1,0 +1,346 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+}
+
+#bigbigpicture {
+	position:relative;
+}
+
+#bigpicture {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* color blocks */
+#blackblock {
+	background-color: #1A1922;
+	height: 2760px;
+	width:100%;
+	position: absolute;
+	top: 920px;
+
+}
+
+
+/* animations */
+
+@keyframes floating {
+   0% { top: 20px; }
+   50% { top: 0px; }
+   100% { top: 20px; }
+}
+
+#shape2, #shape3, #shape5, #shape7 {
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+
+/* shapes */
+
+#shapes {
+	height: 100%
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+#shape1 {
+	width: 400px;
+	position: absolute;
+	left:300px;
+}
+#shape2 {
+	width: 230px;
+	position: absolute;
+	top:0px;
+	transform: translateY(200px);
+	left:1000px;
+}
+#shape3 {
+	width: 230px;
+	position: absolute;
+	top:0px;
+	transform: translateY(700px);
+	left:500px;
+}
+#shape4 {
+	width: 365px;
+	position: absolute;
+	top:0px;
+	transform: translateY(780px);
+	left:1300px;
+}
+#shape5 {
+	width:380px;
+	position: absolute;
+	top:0px;
+	transform: translateY(1640px);
+	left:300px;
+}
+#shape6 {
+	width: 365px;
+	position: absolute;
+	top:0px;
+	transform: translateY(2650px);
+	left:1300px;
+}
+#shape7 {
+	width:230px;
+	position: absolute;
+	top:0px;
+	transform: translateY(3050px);
+	left:520px;
+}
+#shape8 {
+	width:520px;
+	position: absolute;
+	top:0px;
+	transform: translateY(3408px);
+	right:0px;
+
+
+}
+
+
+/* nav related things live here */
+
+#navbar {
+	width: auto;
+	position: fixed;
+	float:left;
+}
+
+#logowhite {
+	position: relative;
+	top: 40px;
+	left: 80px;
+	max-width: 150px;
+	display: none;
+}
+
+#logoblack {
+	position: relative;
+	top: 40px;
+	left: 80px;
+	max-width: 150px;
+}
+
+
+#star {
+	position: relative;
+	top: 538px;
+	left: 40px;
+	width: 35px;
+}
+
+
+#navwords {
+	position: absolute;
+	height:150px;
+	left: 80px;
+	bottom: -655px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+a:hover {
+	color: #E5457A;
+}
+
+a {
+	font-size: 18px;
+	font-family: Quicksand;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 28px;
+	text-decoration: none;
+}
+
+
+/* right side content lives here*/
+
+#content {
+	width:auto;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	right:0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*div sizing*/
+
+#home, #worlds, #menu, #about {
+	height: 920px;
+	bottom-margin: 40px;
+}
+
+/*home here*/
+
+
+#home {
+	border: 0px;
+	position: relative;
+	top: 350px;
+}
+	
+
+h1 {
+	font-size: 90px;
+	font-family: Quicksand;
+	font-weight: 700;
+	margin: 0px;
+
+}
+
+h3 {
+	font-family: Quicksand;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.teal {
+	color: #41BCB6;
+	font-weight: 600;
+}
+
+.pink {
+	color: #E5457A;
+	font-weight: 600;
+}
+
+/*worlds here*/
+
+#worlds {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 60px;
+	margin-right:60px;
+}
+
+#leftbutton, #rightbutton {
+	background-color:#1A1922;
+	border:none;
+	display: none;
+}
+
+#theme {
+	display:none;
+}
+
+.hidden {
+	display:none;
+}
+
+
+/*menu here*/
+
+#menu {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+h2 {
+	font-family: Quicksand;
+	font-size: 28px;
+	font-weight: 600;
+	color: white;
+
+}
+
+#menucontent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+#coldrinks {
+	font-size: 12px;
+	font-family: Quicksand;
+	font-weight: 400;
+	position: relative;
+}
+
+.itemtitle {
+	font-size: 18px;
+	font-family: Quicksand;
+	font-weight: 600;
+	color: white;
+}
+
+.menufourth {
+	width: 50%;
+	margin-bottom: 5%;
+}
+
+.fourthcontent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 78%;
+
+}
+.menuitems {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 75%
+
+}
+
+.price {
+	font-family: Quicksand;
+	font-size: 12px;
+	font-weight: 400;
+	color: white;
+}
+
+.foodname {
+	font-family: Quicksand;
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+}
+
+#goggles {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%
+
+}
+
+#ourmission {
+	font-size: 90px;
+	font-family: Quicksand;
+	font-weight: 700;
+	margin: 0px;
+	color: white;
+}
+
+#h3 {
+	font-family: Quicksand;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: white;
+}
+#mission {
+	position:relative;
+	bottom:-50%;
+}
+
+
